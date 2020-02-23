@@ -30,8 +30,6 @@
 }
 
 .showList {
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   margin-top: 100px;
 }
@@ -44,14 +42,8 @@
   width: 5%
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 20px;
-}
-
 .backBttn {
+  align-self: center;
   margin-top: 30px;
   background-color: blue;
   border-radius: 5px;
@@ -62,7 +54,18 @@
   height: 40px;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: flex-start;
+  margin-top: 20px;
+}
+
 .formItem {
   font-size: 16px;
   margin-right: 20px;
+  align-self: flex-start;
+  text-align: left;
+  width: 10%
 }

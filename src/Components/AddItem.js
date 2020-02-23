@@ -25,7 +25,7 @@ class todoListView extends Component {
 
   render() {
     return (
-      <div>
+      <div c>
         <button className="backBttn" type="button" onClick={this.props.showMainView}>Main screen</button>
         <form id="newItemForm" className="showList" onSubmit={this.handleSubmit}>
           <div className="row">
