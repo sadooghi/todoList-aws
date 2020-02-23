@@ -40,10 +40,10 @@ class MainScreen extends Component {
           TODO APP powered by React and AWS!
         </p>
         </header>
-        <div className="bodyView">
+        <div>
           {
             !(showList || addItem) && (
-              <div>
+              <div className="centerView">
                 <button className="button" onClick={this.handleAddItem} type="button">Add a Todo item to your list</button>
                 <button className="button" onClick={this.handleShowList} type="button">View your Todo list</button>
               </div>
