@@ -74,7 +74,6 @@ class todoListView extends Component {
             <button className="backBttn" type="button" onClick={this.showRemove}>Remove</button>
             <ul className="row">
               {shouldRemoveItem && <ul className="deleteCell">delete</ul>}
-              <ul className="tableCell">id</ul>
               <ul className="tableCell">item</ul>
               <ul className="tableCell">description</ul>
               <ul className="tableCell">is done</ul>
@@ -90,7 +89,6 @@ class todoListView extends Component {
                         </button>
                       </ul>
                     )}
-                    <ul className="tableCell">{listItem.id}</ul>
                     <ul className="tableCell">{listItem.item}</ul>
                     <ul className="tableCell">{listItem.description}</ul>
                     <ul className="tableCell">
