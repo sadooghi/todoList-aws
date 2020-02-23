@@ -4,10 +4,6 @@ import './Styles.css';
 class todoListView extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      itemVal: "",
-      descVal: ""
-    }
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
@@ -28,7 +24,6 @@ class todoListView extends Component {
   }
 
   render() {
-    const { itemVal, descVal } = this.state;
     return (
       <div>
         <button className="backBttn" type="button" onClick={this.props.showMainView}>Main screen</button>
